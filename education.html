@@ -5,37 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+     <style>
+            .Navbar{
+                display: flex;
+                /* background-color: aliceblue; */
+                justify-content: space-evenly;
+                height:30px;
+                width: 100%;
+                position: fixed;
+                top: 20px;
+
+            }
+            .logo{
+                display: flex;
+                height: 60px;
+                
+            } 
+            
+            .services ul{
+                display: flex;
+                list-style: none;
+                margin-top: 2px;
+                height: 30px;
+                width: 100%;
+                background-color: white;
+            }
+            .services a{
+                text-decoration: none;
+                margin: 20px;
+                color: black;
+                font-size: 20px;
+            }
+
+            .services a:hover{
+                background-color:rgb(85, 76, 255); 
+                padding: 10px;
+                color: white;
+                border-radius: 10px;
+            }
+            .contact a{
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                background-color: rgb(85, 76, 255);
+                padding: 10px;
+                border-radius: 10px;
+                      }
+
+     </style>
 </head>
 <body>
+
     <!-- div for navigation bar -->
-        <div class="navbar">
-            <ul class="Links">
-                <div>
-                    <li class="Logo">
-                <img src="Ayush_Logo.jpeg"alt=Ayush_Logo>
-              </li>
-                </div>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="education.html" class="active">Education</a>
-                </li>
-                <li>
-                    <a href="skills.html">Skills</a>
-                </li>
-                <li>
-                    <a href="project.html">Projects</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                
-            </ul>
+        <div class="Navbar">
+            <div class="logo">
+                  <img src="Ayush_Logo.jpeg"alt="Ayush_Logo">
+            </div>
+            <div class="services">
+                <ul>
+                   <li> <a href="index.html">home</a>       </li> 
+                   <li> <a href="skills.html">skills</a>     </li> 
+                    <li> <a href="about.html">about</a>     </li>
+                    <li> <a href="education.html" class="active">education</a> </li>
+                    <li>  <a href="project.html">project</a>   </li>   
+                </ul>    
+            </div>
+            <div class="contact">
+                    <a href="contact.html">contact</a>
+            </div>
         </div>
+
+
+
+
+       
 
 </body>
 </html>
