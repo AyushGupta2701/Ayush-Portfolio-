@@ -1,12 +1,15 @@
 body{
     padding-top:70px ;
-    background-color: white;
+    /* background-color: rgb(185, 211, 240); */
     font-family: Arial, Helvetica, sans-serif;
 }
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 /* CSS for nav bar */
@@ -19,17 +22,17 @@ body{
                 width: 100%;
                 position: fixed;
                 top: 0px;
-
-            }
-            .logo{
+                z-index: 1;
+            
+        }
+.logo{
                 position: relative;
                 top: 10px;
                 display: flex;
                 height: 70px;
-                
-            } 
+    } 
             
-            .services ul{
+.services ul{
                 position: relative;
                 display: flex;
                 list-style: none;
@@ -39,20 +42,20 @@ body{
                 background-color: white;
                 top:20px;
             }
-            .services a{
+.services a{
                 text-decoration: none;
                 margin: 20px;
                 color: black;
                 font-size: 20px;
             }
 
-            .services a:hover{
+.services a:hover{
                 background-color:rgb(85, 76, 255); 
                 padding: 10px;
                 color: white;
                 border-radius: 10px;
             }
-            .contact a{
+.contact a{
                 position: relative;
                 text-decoration: none;
                 font-size: 20px;
@@ -61,105 +64,459 @@ body{
                 padding: 10px;
                 border-radius: 10px;
                 top: 20px;
-                      }
+          }
 
-            .services a.active{
-    background-color:rgb(85, 76, 255);
-    color:white;
-    padding: 10px;
-    border-radius: 10px
-    }
-
- 
- 
 /* CSS for index page */
 /* CSS for short intro in index page */
-.short_intro{
+#short_intro{
     font-weight: 1000;
-    font-size:20px;
+    font-size:25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 100px;
-    margin-left: 50px;
-    color: rgb(0, 0, 0);
+    margin-top: 5vh;
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    scroll-margin-top: 100px;
+    
 }
+
 .name{
     color: rgb(85,76,225);
     font-size: 80px;
 }
 
+.low_intro{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.link{
+    display: flex;
+    justify-content: flex-start;
+}
+
+ .git{
+    font-size: 5vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    color: green;
+ }
+ .git:hover{
+    font-size: 8vh;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px green;
+ }
+
+.linkdin{
+    font-size: 5vh;
+    color: blue;
+}
+
+.linkdin:hover{
+    font-size: 8vh;
+    box-shadow: 10px 10px 10px blue;
+ }
 /* CSS for My Photo in index page*/
 
-.short_intro img{
-    width:200px;
+.Ayush_photo{
+    width:220px;
     border-radius: 70%;
-    background: none;
-    background-color: white;
-    background-blend-mode: color;
-    /* margin-left: 200px; */
-    
-    box-shadow:  20px 20px 100px blue;    
+    z-index: 2;
+    box-shadow:  0px 0px 100px blue;    
 }
 .My_photo{
-    width: 220px;
     height: 320px;
     border-radius: 80%;
     border: 10px solid rgb(85, 76, 255);
-    transform: translate(130px,-50px);
-    /* transform: scale(1.5); */
-    /* border-color: aqua; */
+
 }
+
+/* CSS for line below photo */
+.upper_line{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(85,76,225,0.5);
+
+}
+
+.upper_line div{
+    
+    font-size: 20px;
+    border-top: 0px;
+    border-right: 5px;
+    border-left: 5px;
+    border-bottom: 0px;
+    border-style:groove ;
+    padding: 0px 5px 0px 5px;
+}
+
+/* CSS for My Bio */
+.MyBio{
+    position: relative;
+    top: 50px;
+    height: 30vh;
+    width: 100%;
+    border: 0px solid white;
+    box-shadow: 0 0 20px gray;
+}
+.Bio_he{
+    position: relative;
+    top: 1vh;
+    font-size: 4vh;
+    justify-self: center;
+}
+
+.Bio_con{
+    font-size: 2.5vh;
+    color: rgb(85, 76, 255);
+    justify-self: center;
+}
+
+.Readmore{
+    position: relative;
+    top: 3vh;
+    justify-self: center;
+}
+
+/* CSS for skills section */
+#skill{
+    scroll-margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    top: 10vh;
+}
+.skills{
+    display: grid;
+    position: relative;
+    top: 15vh;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+    grid-template-columns: repeat(2,minmax(100px,auto));
+    grid-template-rows: repeat(2,minmax(100px,auto));
+}
+.skills div:hover{
+    height: 250px;
+    width: 350px;
+}
+
+.skills div{
+    height: 200px;
+    width: 300px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px gray;
+    border-radius: 1vh;
+    justify-items:center;
+    align-items: center;
+}
+
+.skills ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(70px,auto));
+    gap: 30px;
+    column-gap: 50px;
+    justify-items: flex-start;
+    padding: 10px;
+    margin: 10px;
+    list-style:square;
+    color: rgb(0, 80, 253);
+}
+.skills p{
+    font-size: 25px;
+    padding: 20px;
+}
+
+/* CSS for about me section */
+
+#about{
+    position: relative;
+    top: 20vh;
+    justify-items: center;
+    scroll-margin-top: 80px;
+    
+}
+#about p{
+    font-size: 3vh;
+    position: relative;
+    top: 1vh;
+}
+#about img{
+    position: relative;
+    top: 4vh;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.details{
+    display: grid;
+    position: relative;
+    top: 15vh;
+    justify-items: center;
+    align-items: center;
+    gap: 80px;
+    grid-template-columns: repeat(2,minmax(100px,auto));
+    grid-template-rows: repeat(2,minmax(100px,auto));
+}
+
+.details div{
+    height: 200px;
+    width: 500px;
+    border: 2px dashed black;
+    box-shadow: 0 0 20px gray;
+    border-radius: 1vh;
+    justify-items:center;
+    align-items: center;
+}
+
+.personal_det ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(70px,auto));
+    gap: 10px;
+    column-gap: 30px;
+    justify-items: flex-start;
+    padding: 10px;
+    margin-top: 20px;
+    list-style:square;
+    color: rgb(0, 80, 253);
+}
+
+.hobbies{
+    grid-column: 1/3;
+}
+
+.hobbies ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(70px,auto));
+    gap: 10px;
+    column-gap: 30px;
+    justify-items: flex-start;
+    padding: 10px;
+    margin-top: 20px;
+    list-style:square;
+    color: rgb(0, 80, 253);
+}
+
+.introduction {
+    grid-column: 1/3;
+    
+}
+
+.introduction ul{
+    color: rgb(0, 80, 253);
+    position: relative;
+    top: 2vh;
+    left: 1vh;
+}
+
+.career_obj ul{
+    color: rgb(0, 80, 253);
+    position: relative;
+    top: 2vh;   
+    left: 1vh;
+}
+
+/* CSS for education section */
+#education{
+    scroll-margin-top: 80px;
+    position: relative;
+    /* display: flex; */
+    justify-items: center;
+    font-size: 4vh;
+    top: 40vh;
+}
+
+
+.edu_details{
+    display: grid;
+    position: relative;
+    top: 5vh;
+    justify-items: center;
+    align-items: center;
+    gap: 100px;
+    grid-template-columns: repeat(2,minmax(100px,auto));
+    grid-template-rows: repeat(2,minmax(100px,auto));
+}
+.edu_details div:hover{
+    height: 300px;
+    width: 550px;
+}
+
+.edu_details div{
+    height: 250px;
+    width: 500px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px gray;
+    border-radius: 1vh;
+    justify-items:center;
+    align-items: center;
+}
+
+.edu_details ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(70px,auto));
+    gap: 20px;
+    column-gap: 30px;
+    justify-items: flex-start;
+    padding: 10px;
+    margin: 10px;
+    list-style:square;
+    color: rgb(0, 80, 253);
+    font-size: 2vh;
+    position: relative;
+    left: 1vh;
+}
+.edu_details p{
+    font-size: 25px;
+    padding: 20px;
+}
+
+.college{
+    grid-column: 1/3;
+}
+
+/* CSS for project section */
+
+#project{
+    scroll-margin-top: 80px;
+    position: relative;
+    /* display: flex; */
+    justify-items: center;
+    font-size: 4vh;
+    top: 50vh;
+}
+
+
+.project_details{
+    display: grid;
+    position: relative;
+    top: 5vh;
+    justify-items: center;
+    align-items: center;
+    gap: 100px;
+    grid-template-columns: repeat(2,minmax(100px,auto));
+    grid-template-rows: repeat(2,minmax(100px,auto));
+}
+
+
+
+
+.proj_list{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(70px,auto));
+    gap: 20px;
+    column-gap: 30px;
+    justify-items: flex-start;
+    padding: 10px;
+    margin: 10px;
+    list-style:decimal;
+    color: rgb(0, 80, 253);
+    font-size: 2vh;
+    position: relative;
+    left: 2vh;
+}
+.proj_head{
+    font-size: 25px;
+    padding: 20px;
+}
+
+.rem_3G{
+    height: 250px;
+    width: 500px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px gray;
+    border-radius: 1vh;
+    justify-items:center;
+    align-items: center;
+}
+
+.rem_3F{
+    height: 250px;
+    width: 500px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px gray;
+    border-radius: 1vh;
+    justify-items:center;
+    align-items: center;
+}
+
+.rem_3B{
+    height: 250px;
+    width: 500px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px gray;
+    border-radius: 1vh;
+    justify-items:center;
+    align-items: center;
+    grid-column: 1/3;
+}
+
+
+
+.console{
+    grid-column: 1/3;
+     height: 300px;
+    width: 1000px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px gray;
+    border-radius: 1vh;
+    justify-items:center;
+    align-items: center;
+}
+
+
+
+
+
 
 /* CSS for progress bar */
 
-/* bar for skill-1 */
-.skill-1{
-    position: relative ;
-    top: 500px;
-    left: 10px;
-}
-.skill_info1 span{
-    color: black;
-    font-size: medium;
-    margin: 80px;
-}
-.outer1{
+.Bar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(autofill,minmax(500px,auto));
+    grid-template-rows: 200px 100px 100px;
     position: relative;
-    left: 75px;
-    width: 250px;
-    height: 20px;
-    border: 3px solid white;
+    top: 50vh;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.skill_info_p{
+    
+    grid-column: 1/3;
+    height: 0vh;
+    width: 100%;
+    
+}
+
+.skill_para{
+    align-self:center;
+    font-size: 5vh;
+    color: rgb(85, 76, 255) ;
+    font-weight: bold;
+    
+}
+
+.outer{
+    position: relative;
+    left: 8vh;
+    width: 30vh;
+    height: 2vh;
+    border: 0px solid white;
     border-radius: 20px;
     background-color: rgb(139, 142, 199);
 }
-.inner1{
-    width: 50%;
-    height: 100%;
-    /* border: 0px solid red; */
-    background-color: rgb(85, 76, 255);
-    border-radius: 20px;
-}
-/* bar for skill-2 */
-.skill-2{
-    position: relative ;
-    top: 500px;
-    left: 900px;
-}
-.skill_info2 span{
-    color: black;
-    font-size: medium;
-    margin: 80px;
-}
-.outer2{
-    position: relative;
-    left: 75px;
-    width: 250px;
-    height: 20px;
-    border: 3px solid white;
-    border-radius: 20px;
-    background-color: rgb(139, 142, 199);
-}
-.inner2{
+.inner_css{
     width: 50%;
     height: 100%;
     /* border: 0px solid red; */
@@ -167,57 +524,44 @@ body{
     border-radius: 20px;
 }
 
-/* bar for skill-3 */
-.skill-3{
-    position: relative ;
-    top: 500px;
-}
-.skill_info3 span{
-    color: black;
-    font-size: medium;
-    margin: 80px;
-}
-.outer3{
-    position: relative;
-    left: 75px;
-    width: 250px;
-    height: 20px;
-    border: 3px solid white;
-    border-radius: 20px;
-    background-color: rgb(139, 142, 199);
-}
-.inner3{
-    width: 50%;
+.inner_html{
+    width: 70%;
     height: 100%;
     /* border: 0px solid red; */
     background-color: rgb(85, 76, 255);
     border-radius: 20px;
+}
+.inner_js{
+    width: 40%;
+    height: 100%;
+    /* border: 0px solid red; */
+    background-color: rgb(85, 76, 255);
+    border-radius: 20px;
+}
+.inner_java{
+    width: 60%;
+    height: 100%;
+    /* border: 0px solid red; */
+    background-color: rgb(85, 76, 255);
+    border-radius: 20px;
+}
+.skill_info span{
+    color: black;
+    font-size: medium;
+    margin: 80px;
 }
 
-/* bar for skill-4 */
-.skill-4{
-    position: relative ;
-    top: 500px;
-    left: 800px;
-}
-.skill_info4 span{
-    color: black;
-    font-size: medium;
-    margin: 80px;
-}
-.outer4{
+/* footer home */
+#footer_home{
     position: relative;
-    left: 75px;
-    width: 250px;
-    height: 20px;
-    border: 3px solid white;
-    border-radius: 20px;
-    background-color: rgb(139, 142, 199);
+    top: 50vh;
+    height: 20vh;
+    background-color: gray;
+    /* position: sticky; */
 }
-.inner4{
-    width: 50%;
-    height: 100%;
-    /* border: 0px solid red; */
-    background-color: rgb(85, 76, 255);
-    border-radius: 20px;
+#footer_home p{
+    position: relative;
+    left: 1vh;
+    font-weight:500;
+
 }

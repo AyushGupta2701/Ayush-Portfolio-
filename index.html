@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <!-- div for navigation bar -->
@@ -15,84 +17,404 @@
             </div>
             <div class="services">
                 <ul>
-                   <li> <a href="index.html" class="active">home</a>       </li> 
-                   <li> <a href="skills.html" >skills</a>     </li> 
-                    <li> <a href="about.html">about</a>     </li>
-                    <li> <a href="education.html">education</a> </li>
-                    <li>  <a href="project.html">project</a>   </li>   
+                   <li> <a href="#short_intro" class="active">home</a>       </li> 
+                   <li> <a href="#skill" >skills</a>     </li> 
+                    <li> <a href="#about">about</a>     </li>
+                    <li> <a href="#education">education</a> </li>
+                    <li>  <a href="#project">project</a>   </li>   
                 </ul>    
             </div>
             <div class="contact">
-                    <a href="contact.html">contact</a>
+                    <a href="#footer_home">contact</a>
             </div>
         </div>
 
         <!-- div for short intro -->
-         <div class="short_intro">
+         <div id="short_intro">
             <div>
                 <p>
                 Hello, I am <br>
                 <h1 class="name"><b>Ayush Gupta</b></h1>
-                A young Software Developer with crazy for mobile & web design
+                A young Software Developer with crazy for mobile & web design.
             </p>
+            <pre class="low_intro">I build modern and scalable web applications
+using Java, Spring Boot, MySQL, 
+HTML CSS, JavaScript.</pre>
+
+<br>
+                <!-- for linkdin and github link -->
+            <div class="link">
+                    <div>
+                        <a href="https://github.com/AyushGupta2701" target="_blank"><i class="fa-brands fa-github git"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/ayush-gupta-0410743bb/" target="_blank"><i class="fa-brands fa-linkedin linkdin"></i></a>
+                    </div>
+            </div>
             </div>
 
 
          <!-- div for My photo -->
           <div class="My_photo">
-            <img src="Ayush_2.jpeg"alt="Ayush_Photo">
+            <img src="Ayush_m.jpeg"alt="Ayush_Photo" class="Ayush_photo">
           </div>
           </div>
+
+          <!-- div for designing line below photo -->
+           <br>
+        <div class="upper_line">
+            <div> <p> Frontend design</p></div>
+            <div> <p>Backend design </p></div>
+            <div> <p> API design</p></div>
+            <div> <p> Database design</p></div>
+            
+        </div>          
+<br>
+        <!-- div for My bio -->
+         <div class="MyBio">
+            <div>
+                <p class="Bio_he">My Bio</p>
+            </div>
+ <br>
+            <div>
+                <p class="Bio_con"> I am Ayush Gupta, a passionate Full Stack Developer with a strong interest in building modern, scalable, and user-friendly web applicatons. I enjoy solving real-world problems through clean code and continuously improving my skills in Java, Spring Boot, HTML, CSS, Java-script, React and modern web technoogies. My focus is on creating efficient, reliable, and user friendly applications while continuously growing as a developer. </p>
+            </div>
+
+            <div class="Readmore">
+                <a href="about.html">Read more</a>
+            </div>
+            
+            </div>
+
+        <!-- div for skills section -->
+
+                 <div id="skill">
+                     <p>My skills</p>
+                </div>
+                 <div class="skills">
+
+                        <div>
+                            <p>Frontend</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Java-script</li>
+                                <li>React</li>
+                                <li>Java Swing</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p>Backend</p>
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>REST API</li>
+                                <li>JDBC</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p>Database</p>
+                            <ul>
+                                <li>SQL</li>
+                                <li>MySQL</li>
+                                <li>Cloud Database(learning)</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p>Languages</p>
+                            <ul>
+                                <li>C language</li>
+                                <li>C++ </li>
+                                <li>Java</li>
+                                
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p>Tools</p>
+                            <ul>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>VS Code</li>
+                                <li>Intellij IDEA</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p>Soft Skill</p>
+                            <ul>
+                                <li>Communication</li>
+                                <li>Problem Solving</li>
+                                <li>Teamwork</li>
+                                <li>Time Management</li>
+                            </ul>
+                        </div>
+                 </div>
+
+                 <!-- div for about me section -->
+                  <div id="about">
+                    <div>
+                        <p>About me</p>
+                    </div>
+
+                    <div>
+                        <img src="Ayush_Photo.jpeg" alt="Ayush_photo">
+                    </div>
+
+                    <div class="details">
+                        <div class="introduction">
+                            <p>
+                                Introduction
+                            </p>
+                            <ul>
+                                Hello! I'm Ayush Gupta from Varanasi, currently persuing a BCA at Microtek College of Management and Technology. I have a strong foundation in C and C++ and am currently learning Java with Spring Boot and REST API to strengthen my backend development and expanding my skills in HTML, CSS and JS. I have developed a GUI-based Library Management System using java swing with MySQL. My goal is to become a skilled Software Engineer and grow professionally in the IT industry. 
+                            </ul>
+                        </div>
+                        <div class="career_obj">
+                            <p class="career_head"> Career Objective</p>
+                            <ul>
+                                To begin my career as a Java Full Stack Developer in a growth-oriented organization where i can apply my technical knowledge, enhance my problem-solving abilities, and continuously learn new technologies. I aim to contribute to meaningful projects, develop high-quality software solutions, and grow into a skilled and responsible software professional.
+                            </ul>
+                        </div>
+                        <div class="personal_det">
+    
+                                <p>
+                                    Personal details
+                                </p>
+                            
+                            <ul>
+                                <li>Name - Ayush Gupta</li>
+                                <li>Email - ayushgupta4164@gmail.com</li>
+                                <li>Phone - 8318307613</li>
+                                <li>City - Varanasi</li>
+                                <li>Nationality - Indian</li>
+                                <li>Languages - Hindi/English</li>
+                            </ul>
+                        </div>
+                        <div class="hobbies">
+                                 <p>
+                                    Hobbies
+                                </p>
+                            
+                            <ul>
+                                <li>Coding</li>
+                                <li>Learnng new technologies</li>
+                                <li>Cricket</li>
+                                <li>Chess</li>
+                                <li>Reading Tech Blogs</li>
+                                <li>Learn with AI</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                  </div>
+
+                  <!-- div for education section -->
+                  <div id="education">
+                    <div>
+                        <p>Education</p>
+                    </div>
+                    <div class="edu_details">
+
+                    <div class="10th">
+                        <p>
+                            10<sup>th</sup>
+                        </p>
+                        <ul>
+                            <li>Board - CBSE</li>
+                            <li>School - Bal Vidhalaya Madhyamik School</li>
+                            <li>Subjects - English, Hindi, Maths, Science, Social Science</li>
+                            <li>Percentage - 69%</li>
+                        </ul>
+                    </div>
+
+                    <div class="12th">
+                        <p>
+                            12<sup>th</sup>
+                        </p>
+                        <ul>
+                            <li>Board - CBSE</li>
+                            <li>School - Sheetala Children School</li>
+                            <li>Subjects - English, Physics, Chemeistry, Maths, Physical Education</li>
+                            <li>Percentage - 81%</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="college">
+                        <p>
+                            College
+                        </p>
+                        <ul>
+                            <li>Course - Bachelor of Computer Application(BCA)</li>
+                            <li>College - Microtek College of Management and Technology</li>
+                            <li>Year - 2024-2027</li>
+                            <li>CGPA - 8.8</li>
+                        </ul>
+                    </div>
+                    </div>
+
+                  </div>
+
+                  <!-- div for project section -->
+                   <div id="project">
+                    <div>
+                        <p>
+                            Projects
+                        </p>
+                    </div>
+                    <div class="project_details">
+                        <div class="console">
+                            <p class="proj_head">
+                                Console Based
+                            </p>
+                            <ul class="proj_list">
+                                <li><b style="color: black;">Snake and Ladder Game</b>
+                                    <ul>
+                                       <li>
+                                        Technology used- C programming
+                                       </li>
+                                       <li>
+                                        Description- Develop a basic console based project. The game stimulates dice rolls and player movement with basic game logic and loops.
+                                       </li>
+                                    </ul>
+                                </li>
+
+                                 <li><b style="color: black;">Bank Management System</b> 
+                                    <ul>
+                                        <li>Technology used- C++ Programming</li>
+                                        <li>
+                                            Description- Develop a mini project to allow user to perform deposits, withdrawals, and balance checks.
+                                        </li>
+                                    </ul>
+                                 </li>
+
+                                 <li>
+                                    <b style="color: black;">Bookshop Management System</b>
+                                    <ul>
+                                        <li>Technology used- C++ Programming</li>
+                                        <li>
+                                            Description- Develop a basic project to allow user to save books and find the particular books and copies.
+                                        </li>
+                                    </ul>
+                                 </li>       
+                            </ul>
+                        </div>
+                        <div class="rem_3G">
+                            <p class="proj_head">
+                                GUI Based
+                            </p>
+                            <ul class="proj_list">
+                                <li>
+                                    <b style="color: black;">Library Management System(LMS)</b>
+                                    <ul>
+                                        <li>Technology used- Java Swing, JDBC, MySQL</li>
+                                        <li>
+                                            Description- Developed desktop-based LMS, implemented CRUD operations with MySQL database for managing books, students, and issue/return records.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rem_3F">
+                            <p class="proj_head">
+                                Frontend Project
+                            </p>
+                            <ul class="proj_list">
+                                <li><b style="color: black;">Portfolio Website</b>
+                                    <ul>
+                                        <li>Technology used- HTML, CSS, Java-script
+                                        </li>
+                                        <li>
+                                            Description- Develop a Portfolio Website which shows my skills, education, and projects.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rem_3B">
+                            <p class="proj_head">
+                                Backend Project
+                            </p>
+                            <ul class="proj_list">
+                                <li>Comming Soon</li>
+                            </ul>
+                        </div>
+                    </div>
+                   </div>
+                
 
           <!-- div for progress bar -->
 
-          <!-- progress bar for skill-1 -->
-            <div class="skill-1">
-                <div class="skill_info1">
+                <div class="Bar">
+                    <div class="skill_info_p">
+                        <p class="skill_para">
+                            I work hard to improve my skills regularly 
+                        </p>
+                    </div>
+
+                 <!-- div  for skill-1 -->
+                <div class="skill_info">
                     <span>HTML</span>
                     <span>70%</span>
-                </div>
+                
     
-                <div class="outer1">
-                    <div class="inner1"></div>
+                <div class="outer">
+                    <div class="inner_html"></div>
                 </div>
-            </div>
-
-            <!-- progress bar for skill-2 -->
-            <div class="skill-2">
-                <div class="skill_info2">
+                </div>
+        
+            
+            <!-- div for skill-2 -->
+                <div class="skill_info">
                     <span>CSS</span>
                     <span>50%</span>
-                </div>
+                
     
-                <div class="outer2">
-                    <div class="inner2"></div>
+                <div class="outer">
+                    <div class="inner_css"></div>
                 </div>
-            </div>
+                </div>
+            
 
-             <!-- progress bar for skill-3 -->
-            <div class="skill-3">
-                <div class="skill_info3">
+             <!-- div  for skill-3 -->
+            
+                <div class="skill_info">
                     <span>JS</span>
                     <span>40%</span>
-                </div>
+                
     
-                <div class="outer3">
-                    <div class="inner3"></div>
+                <div class="outer">
+                    <div class="inner_js"></div>
                 </div>
-            </div>
+                </div>
+            
 
-              <!-- progrss bar for skill-4 -->
-            <div class="skill-4">
-                <div class="skill_info4">
+              <!-- div for skill-4 -->
+            
+                <div class="skill_info">
                     <span>JAVA</span>
                     <span>60%</span>
-                </div>
+                
     
-                <div class="outer4">
-                    <div class="inner4"></div>
+                <div class="outer">
+                    <div class="inner_java"></div>
                 </div>
-            </div>
+                </div>
+                </div>
+
+                
+                <!-- div for footer -->
+                <div id="footer_home"><br>
+                    <p> Contact - 8318307613</p><br> 
+                    <p>Email - ayushgupta4164@gmail.com</p><br>
+                    <p>Address - Shahavabad jagatpur Varanasi</p><br>
+                    <p>Pincode - 221302</p>
+                </div>
+            
 
 </body>
 </html>
