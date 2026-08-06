@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    
 </head>
 <body>
+    
+    
     <!-- div for navigation bar -->
      <div class="Navbar">
             <div class="logo">
@@ -17,11 +21,11 @@
             </div>
             <div class="services">
                 <ul>
-                   <li> <a href="#short_intro" class="active">home</a>       </li> 
-                   <li> <a href="#skill" >skills</a>     </li> 
-                    <li> <a href="#about">about</a>     </li>
-                    <li> <a href="#education">education</a> </li>
-                    <li>  <a href="#project">project</a>   </li>   
+                   <li> <a href="#short_intro" class="active">Home</a>       </li> 
+                   <li> <a href="#skill" >Skills</a>     </li> 
+                    <li> <a href="#about">About</a>     </li>
+                    <li> <a href="#education">Education</a> </li>
+                    <li>  <a href="#project">Project</a>   </li>   
                 </ul>    
             </div>
             <div class="contact">
@@ -37,10 +41,10 @@
                 <h1 class="name"><b>Ayush Gupta</b></h1>
                 A young Software Developer with crazy for mobile & web design.
             </p>
-            <pre class="low_intro">I build modern and scalable web applications
-using Java, Spring Boot, MySQL, 
-HTML CSS, JavaScript.</pre>
-
+            
+            <pre class="hero-text">I build modern and scalable web applications
+using <span id="typing"></span><span class="cursor">|</span> 
+                </pre>
 <br>
                 <!-- for linkdin and github link -->
             <div class="link">
@@ -49,6 +53,15 @@ HTML CSS, JavaScript.</pre>
                     </div>
                     <div>
                         <a href="https://www.linkedin.com/in/ayush-gupta-0410743bb/" target="_blank"><i class="fa-brands fa-linkedin linkdin"></i></a>
+                    </div>
+                    <div id="Resume">
+                        <p>Resume</p>
+                    <div>
+                        <a href="Ayush_resume.pdf" target="_blank" class="resum"><i class="fa-solid fa-file view"></i></a>
+                    </div>
+                    <div>
+                        <a href="Ayush_resume.pdf" download class="resum"><i class="fa-sharp fa-solid fa-download download"></i></a>
+                    </div>
                     </div>
             </div>
             </div>
@@ -75,13 +88,13 @@ HTML CSS, JavaScript.</pre>
             <div>
                 <p class="Bio_he">My Bio</p>
             </div>
- <br>
+ 
             <div>
-                <p class="Bio_con"> I am Ayush Gupta, a passionate Full Stack Developer with a strong interest in building modern, scalable, and user-friendly web applicatons. I enjoy solving real-world problems through clean code and continuously improving my skills in Java, Spring Boot, HTML, CSS, Java-script, React and modern web technoogies. My focus is on creating efficient, reliable, and user friendly applications while continuously growing as a developer. </p>
+                <p class="Bio_con"> I am Ayush Gupta, a passionate Full Stack Developer with a strong interest in building modern, scalable, and user-friendly web applicatons. I enjoy solving real-world problems through clean code and continuously improving my skills in <u><i>Java, Spring Boot, REST API, HTML, CSS, Java-script, React</i></u> and modern web technoogies. My focus is on creating efficient, reliable, and user friendly applications while continuously growing as a developer. </p>
             </div>
 
             <div class="Readmore">
-                <a href="about.html">Read more</a>
+                <a href="#about">Read more</a>
             </div>
             
             </div>
@@ -91,22 +104,23 @@ HTML CSS, JavaScript.</pre>
                  <div id="skill">
                      <p>My skills</p>
                 </div>
+                <div class="lining_skills"></div>
                  <div class="skills">
 
-                        <div>
-                            <p>Frontend</p>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Java-script</li>
-                                <li>React</li>
+                        <div class="frontend">
+                            <p class="front_p">Frontend</p>
+                            <ul class="front_ul">
+                                <li><i class="fa-brands fa-html5 fa-1.5x"></i>HTML</li>
+                                <li><i class="fa-brands fa-css fa-1.5x"></i>CSS</li>
+                                <li><i class="fa-brands fa-js fa-1.5x"></i>Java-script</li>
+                                <li><i class="fa-brands fa-react fa-1.5x"></i>React</li>
                                 <li>Java Swing</li>
                             </ul>
                         </div>
 
-                        <div>
-                            <p>Backend</p>
-                            <ul>
+                        <div class="backend">
+                            <p class="back_p">Backend</p>
+                            <ul class="back_ul">
                                 <li>Java</li>
                                 <li>Spring Boot</li>
                                 <li>REST API</li>
@@ -114,38 +128,38 @@ HTML CSS, JavaScript.</pre>
                             </ul>
                         </div>
 
-                        <div>
-                            <p>Database</p>
-                            <ul>
+                        <div class="database">
+                            <p class="database_p">Database</p>
+                            <ul class="database_ul">
                                 <li>SQL</li>
                                 <li>MySQL</li>
-                                <li>Cloud Database(learning)</li>
+                                <li><i class="fa-mosaic fa-solid fa-cloud fa-1.5x"></i>Cloud Database(learning)</li>
                             </ul>
                         </div>
 
-                        <div>
-                            <p>Languages</p>
-                            <ul>
+                        <div class="languages">
+                            <p class="language_p">Languages</p>
+                            <ul class="language_ul">
                                 <li>C language</li>
                                 <li>C++ </li>
-                                <li>Java</li>
+                                <li><i class="fa-brands fa-java fa-2x"></i>Java</li>
                                 
                             </ul>
                         </div>
 
-                        <div>
-                            <p>Tools</p>
-                            <ul>
-                                <li>Git</li>
-                                <li>GitHub</li>
+                        <div class="tools">
+                            <p class="tools_p">Tools</p>
+                            <ul class="tools_ul">
+                                <li><i class="fa-brands fa-square-git fa-1.5x"></i>Git</li>
+                                <li><i class="fa-brands fa-github fa-jello fa-1.5x"></i>GitHub</li>
                                 <li>VS Code</li>
                                 <li>Intellij IDEA</li>
                             </ul>
                         </div>
 
-                        <div>
-                            <p>Soft Skill</p>
-                            <ul>
+                        <div class="soft_skill">
+                            <p class="soft_p">Soft Skill</p>
+                             <ul class="soft_ul">
                                 <li>Communication</li>
                                 <li>Problem Solving</li>
                                 <li>Teamwork</li>
@@ -155,10 +169,12 @@ HTML CSS, JavaScript.</pre>
                  </div>
 
                  <!-- div for about me section -->
+                  <div class="lining_about"></div>
                   <div id="about">
-                    <div>
+                    <div class="about_me">
                         <p>About me</p>
                     </div>
+                
 
                     <div>
                         <img src="Ayush_Photo.jpeg" alt="Ayush_photo">
@@ -166,26 +182,26 @@ HTML CSS, JavaScript.</pre>
 
                     <div class="details">
                         <div class="introduction">
-                            <p>
+                            <p class="intro_p">
                                 Introduction
                             </p>
-                            <ul>
-                                Hello! I'm Ayush Gupta from Varanasi, currently persuing a BCA at Microtek College of Management and Technology. I have a strong foundation in C and C++ and am currently learning Java with Spring Boot and REST API to strengthen my backend development and expanding my skills in HTML, CSS and JS. I have developed a GUI-based Library Management System using java swing with MySQL. My goal is to become a skilled Software Engineer and grow professionally in the IT industry. 
+                            <ul class="intro_ul">
+                                Hello! I'm Ayush Gupta from Varanasi, currently persuing a BCA at Microtek College of Management and Technology. I have a strong foundation in C and C++ and am <u><i><b>currently learning Java with Spring Boot and REST API to strengthen my backend development and expanding my skills in HTML, CSS and JS.</b></i></u> I have developed a GUI-based Library Management System using java swing with MySQL. My goal is to become a skilled Software Engineer and grow professionally in the IT industry. 
                             </ul>
                         </div>
                         <div class="career_obj">
                             <p class="career_head"> Career Objective</p>
-                            <ul>
+                            <ul class="career_ul">
                                 To begin my career as a Java Full Stack Developer in a growth-oriented organization where i can apply my technical knowledge, enhance my problem-solving abilities, and continuously learn new technologies. I aim to contribute to meaningful projects, develop high-quality software solutions, and grow into a skilled and responsible software professional.
                             </ul>
                         </div>
                         <div class="personal_det">
     
-                                <p>
+                                <p class="personal_p">
                                     Personal details
                                 </p>
                             
-                            <ul>
+                            <ul class="personal_ul">
                                 <li>Name - Ayush Gupta</li>
                                 <li>Email - ayushgupta4164@gmail.com</li>
                                 <li>Phone - 8318307613</li>
@@ -195,11 +211,11 @@ HTML CSS, JavaScript.</pre>
                             </ul>
                         </div>
                         <div class="hobbies">
-                                 <p>
+                                 <p class="hobbies_p">
                                     Hobbies
                                 </p>
                             
-                            <ul>
+                            <ul class="hobbies_ul">
                                 <li>Coding</li>
                                 <li>Learnng new technologies</li>
                                 <li>Cricket</li>
@@ -213,17 +229,19 @@ HTML CSS, JavaScript.</pre>
                   </div>
 
                   <!-- div for education section -->
+                   <div class="lining_education"></div>
                   <div id="education">
-                    <div>
+                    <div class="edu">
                         <p>Education</p>
                     </div>
+                    
                     <div class="edu_details">
 
                     <div class="10th">
-                        <p>
+                        <p class="ten_p">
                             10<sup>th</sup>
                         </p>
-                        <ul>
+                        <ul class="ten_ul">
                             <li>Board - CBSE</li>
                             <li>School - Bal Vidhalaya Madhyamik School</li>
                             <li>Subjects - English, Hindi, Maths, Science, Social Science</li>
@@ -232,10 +250,10 @@ HTML CSS, JavaScript.</pre>
                     </div>
 
                     <div class="12th">
-                        <p>
+                        <p class="twelve_p">
                             12<sup>th</sup>
                         </p>
-                        <ul>
+                        <ul class="twelve_ul">
                             <li>Board - CBSE</li>
                             <li>School - Sheetala Children School</li>
                             <li>Subjects - English, Physics, Chemeistry, Maths, Physical Education</li>
@@ -245,10 +263,10 @@ HTML CSS, JavaScript.</pre>
                     </div>
 
                     <div class="college">
-                        <p>
+                        <p class="college_p">
                             College
                         </p>
-                        <ul>
+                        <ul class="college_ul">
                             <li>Course - Bachelor of Computer Application(BCA)</li>
                             <li>College - Microtek College of Management and Technology</li>
                             <li>Year - 2024-2027</li>
@@ -260,11 +278,13 @@ HTML CSS, JavaScript.</pre>
                   </div>
 
                   <!-- div for project section -->
+                   <div class="lining_project"></div>
                    <div id="project">
-                    <div>
+                    <div class="proj">
                         <p>
                             Projects
                         </p>
+                        
                     </div>
                     <div class="project_details">
                         <div class="console">
@@ -272,8 +292,8 @@ HTML CSS, JavaScript.</pre>
                                 Console Based
                             </p>
                             <ul class="proj_list">
-                                <li><b style="color: black;">Snake and Ladder Game</b>
-                                    <ul>
+                                <li><b style="color: black;" class="snake_p">Snake and Ladder Game</b>
+                                    <ul class="snake_ul">
                                        <li>
                                         Technology used- C programming
                                        </li>
@@ -283,8 +303,8 @@ HTML CSS, JavaScript.</pre>
                                     </ul>
                                 </li>
 
-                                 <li><b style="color: black;">Bank Management System</b> 
-                                    <ul>
+                                 <li><b style="color: black;" class="bank_p">Bank Management System</b> 
+                                    <ul class="bank_ul">
                                         <li>Technology used- C++ Programming</li>
                                         <li>
                                             Description- Develop a mini project to allow user to perform deposits, withdrawals, and balance checks.
@@ -293,8 +313,8 @@ HTML CSS, JavaScript.</pre>
                                  </li>
 
                                  <li>
-                                    <b style="color: black;">Bookshop Management System</b>
-                                    <ul>
+                                    <b style="color: black;" class="book_p">Bookshop Management System</b>
+                                    <ul class="book_ul">
                                         <li>Technology used- C++ Programming</li>
                                         <li>
                                             Description- Develop a basic project to allow user to save books and find the particular books and copies.
@@ -309,8 +329,8 @@ HTML CSS, JavaScript.</pre>
                             </p>
                             <ul class="proj_list">
                                 <li>
-                                    <b style="color: black;">Library Management System(LMS)</b>
-                                    <ul>
+                                    <b style="color: black;" class="library_p">Library Management System(LMS)</b>
+                                    <ul class="library_ul">
                                         <li>Technology used- Java Swing, JDBC, MySQL</li>
                                         <li>
                                             Description- Developed desktop-based LMS, implemented CRUD operations with MySQL database for managing books, students, and issue/return records.
@@ -324,8 +344,8 @@ HTML CSS, JavaScript.</pre>
                                 Frontend Project
                             </p>
                             <ul class="proj_list">
-                                <li><b style="color: black;">Portfolio Website</b>
-                                    <ul>
+                                <li><b style="color: black;" class="portfolio_p">Portfolio Website</b>
+                                    <ul class="portfolio_ul">
                                         <li>Technology used- HTML, CSS, Java-script
                                         </li>
                                         <li>
@@ -340,7 +360,7 @@ HTML CSS, JavaScript.</pre>
                                 Backend Project
                             </p>
                             <ul class="proj_list">
-                                <li>Comming Soon</li>
+                                <li class="back_ul">Comming Soon...</li>
                             </ul>
                         </div>
                     </div>
@@ -356,7 +376,7 @@ HTML CSS, JavaScript.</pre>
                         </p>
                     </div>
 
-                 <!-- div  for skill-1 -->
+                 <!-- Progress Bar for html -->
                 <div class="skill_info">
                     <span>HTML</span>
                     <span>70%</span>
@@ -368,7 +388,7 @@ HTML CSS, JavaScript.</pre>
                 </div>
         
             
-            <!-- div for skill-2 -->
+            <!-- Progress Bar for css -->
                 <div class="skill_info">
                     <span>CSS</span>
                     <span>50%</span>
@@ -380,7 +400,7 @@ HTML CSS, JavaScript.</pre>
                 </div>
             
 
-             <!-- div  for skill-3 -->
+             <!-- Progress BAR for js -->
             
                 <div class="skill_info">
                     <span>JS</span>
@@ -393,7 +413,7 @@ HTML CSS, JavaScript.</pre>
                 </div>
             
 
-              <!-- div for skill-4 -->
+              <!-- Progress bar for java -->
             
                 <div class="skill_info">
                     <span>JAVA</span>
@@ -409,12 +429,39 @@ HTML CSS, JavaScript.</pre>
                 
                 <!-- div for footer -->
                 <div id="footer_home"><br>
-                    <p> Contact - 8318307613</p><br> 
-                    <p>Email - ayushgupta4164@gmail.com</p><br>
-                    <p>Address - Shahavabad jagatpur Varanasi</p><br>
-                    <p>Pincode - 221302</p>
-                </div>
-            
+                    <div class="intro">
+                        <p>AYUSH GUPTA</p><br>
+                        <p>Java Full Stack Developer</p><br>
+                        <p>"I enjoy building clean, responsive, and user-friendly web applications while continuously learning new technologies."</p>
+                    </div>
+                    <div class="quick_links">
+                        <a href="#short_intro">Home</a>
+                        <a href="#about">About Me</a>
+                        <a href="#skill">Skills</a>
+                        <a href="#education">Education</a>
+                        <a href="#project">Project</a>
+                        <a href="#Resume">Resume</a>
+                    </div>
 
+                    <div class="follow">
+                        <a href="https://www.linkedin.com/in/ayush-gupta-0410743bb/" target="_blank">linkdin</a>
+                        <a href="https://github.com/AyushGupta2701" target="_blank">Github</a>
+                    </div>
+
+                    <div class="contact_footer">
+                        <p>Email- ayushgupta4164@gmail.com</p>
+                        <br>
+                        <p>Phone- 8318307613</p>
+                        <br>
+                        <p>Address- Varanasi, Uttar Pradesh</p>
+                    </div>
+
+                    <div class="Made_by">
+                        <p><i class="fa-regular fa-copyright"></i> 2026 Ayush Gupta. All Rights Reserved.</p><br>
+                        <p>Made with <i class="heart fa-duotone fa-solid fa-heart" style="--fa-secondary-color: rgb(243, 11, 11); --fa-secondary-opacity: 1;"></i>using HTML, CSS & JavaScript. </p>
+                    </div>
+                </div>
+                
+<script src="script.js" defer></script>
 </body>
 </html>

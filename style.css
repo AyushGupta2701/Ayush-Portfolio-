@@ -1,8 +1,7 @@
 body{
     padding-top:70px ;
-    /* background-color: rgb(185, 211, 240); */
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-weight: 800;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
 *{
     margin:0;
     padding: 0;
@@ -11,6 +10,34 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+.lining_skills{
+    border: 2px solid blue;
+    position: relative;
+    top: 11vh;
+    box-shadow: 0 0 20px blueviolet;
+}
+
+.lining_about{
+    border: 2px solid blue;
+    position: relative;
+    top: 26vh;
+    box-shadow: 0 0 20px blueviolet;
+}
+
+.lining_education{
+    border: 2px solid blue;
+    position: relative;
+    top: 46vh;
+    box-shadow: 0 0 20px blueviolet;
+}
+
+.lining_project{
+    border: 2px solid blue;
+    position: relative;
+    top: 56vh;
+    box-shadow: 0 0 20px blueviolet;
+} 
 
 /* CSS for nav bar */
 
@@ -30,7 +57,7 @@ html{
                 top: 10px;
                 display: flex;
                 height: 70px;
-    } 
+     } 
             
 .services ul{
                 position: relative;
@@ -66,23 +93,41 @@ html{
                 top: 20px;
           }
 
-/* CSS for index page */
-/* CSS for short intro in index page */
+/* CSS for short intro  */
 #short_intro{
     font-weight: 1000;
     font-size:25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 5vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     width: 100%;
     scroll-margin-top: 100px;
     
 }
+.hero_text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#typing{
+    color:#5a25eb;
+    font-weight:bold;
+    font-size: 4vh;
+}
+
+.cursor{
+    animation: blink .7s infinite;
+    font-size: 4vh;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
 
 .name{
     color: rgb(85,76,225);
-    font-size: 80px;
+    font-size: 90px;
 }
 
 .low_intro{
@@ -92,7 +137,7 @@ html{
 
 .link{
     display: flex;
-    justify-content: flex-start;
+    justify-content:flex-start;
 }
 
  .git{
@@ -110,30 +155,59 @@ html{
 .linkdin{
     font-size: 5vh;
     color: blue;
+    margin-right: 3vh;
 }
 
 .linkdin:hover{
     font-size: 8vh;
     box-shadow: 10px 10px 10px blue;
  }
+.view{
+    font-size: 3vh;
+    color:turquoise;
+    margin-right: 2vh;
+    margin-left: 2vh;
+}
+ .download{
+    font-size: 3vh;
+    color:turquoise;
+ } 
+
+ #Resume{
+    display: flex;
+    font-size: 3vh;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+    scroll-margin-top: 100px;
+ }
+ #Resume:hover{
+    height: 6vh;
+    width: 27vh;
+    font-size: 4vh;
+    border-radius: 7px;
+    box-shadow: 0 0 10px gray;
+ }
 /* CSS for My Photo in index page*/
 
 .Ayush_photo{
-    width:220px;
-    border-radius: 70%;
+    width:280px;
+    /* border-radius: 50%; */
+    border-radius: 100px;
     z-index: 2;
-    box-shadow:  0px 0px 100px blue;    
+    box-shadow:  40px 10px 60px blue;
+    border: 5px solid rgb(85,76,225);    
 }
-.My_photo{
-    height: 320px;
-    border-radius: 80%;
-    border: 10px solid rgb(85, 76, 255);
 
+.Ayush_photo:hover{
+    width: 320px;
 }
 
 /* CSS for line below photo */
 .upper_line{
     display: flex;
+    position: relative;
+    top: 5vh;
     justify-content:space-around;
     align-items: center;
     height: 50px;
@@ -141,11 +215,9 @@ html{
     border: 2px solid black;
     border-radius: 5px;
     background-color: rgba(85,76,225,0.5);
-
 }
 
 .upper_line div{
-    
     font-size: 20px;
     border-top: 0px;
     border-right: 5px;
@@ -159,28 +231,41 @@ html{
 .MyBio{
     position: relative;
     top: 50px;
+    justify-self: center;
     height: 30vh;
-    width: 100%;
+    width: 90vw;
     border: 0px solid white;
+    border-radius: 10px;
     box-shadow: 0 0 20px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
 }
 .Bio_he{
     position: relative;
     top: 1vh;
     font-size: 4vh;
-    justify-self: center;
+    
+    text-shadow: 5px 5px 20px black;
 }
 
 .Bio_con{
     font-size: 2.5vh;
     color: rgb(85, 76, 255);
-    justify-self: center;
+    
+    padding: 2vh;
 }
 
-.Readmore{
-    position: relative;
-    top: 3vh;
-    justify-self: center;
+.MyBio:hover{
+    width: 95vw;
+    height: 36vh;
+    .Bio_he{
+        font-size: 5vh;
+    }
+    .Bio_con{
+        font-size: 3vh;
+    }
 }
 
 /* CSS for skills section */
@@ -191,6 +276,7 @@ html{
     justify-content: center;
     font-size: 4vh;
     top: 10vh;
+    text-shadow: 5px 5px 10px blue;
 }
 .skills{
     display: grid;
@@ -202,14 +288,11 @@ html{
     grid-template-columns: repeat(2,minmax(100px,auto));
     grid-template-rows: repeat(2,minmax(100px,auto));
 }
-.skills div:hover{
-    height: 250px;
-    width: 350px;
-}
+
 
 .skills div{
     height: 200px;
-    width: 300px;
+    width: 350px;
     /* border: 2px solid black; */
     box-shadow: 0 0 20px gray;
     border-radius: 1vh;
@@ -217,20 +300,129 @@ html{
     align-items: center;
 }
 
-.skills ul{
-    display: grid;
-    grid-template-columns: repeat(2,minmax(70px,auto));
-    gap: 30px;
-    column-gap: 50px;
-    justify-items: flex-start;
-    padding: 10px;
-    margin: 10px;
-    list-style:square;
-    color: rgb(0, 80, 253);
-}
 .skills p{
     font-size: 25px;
     padding: 20px;
+    text-shadow: 5px 5px 20px black;
+}
+
+.frontend ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(70px,auto));
+    gap: 30px;
+    column-gap: 40px;
+    justify-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+    list-style:square;
+    color: rgb(85, 76, 255);
+    font-size: 2vh;
+}
+
+.backend ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(70px,auto));
+    gap: 30px;
+    column-gap: 40px;
+    justify-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+    list-style:square;
+    color: rgb(85,76,225);
+    font-size: 2vh;
+}
+
+.database ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(70px,auto));
+    gap: 20px;
+    column-gap: 0px;
+    justify-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+    list-style:square;
+    color: rgb(85,76,225);
+    font-size: 2vh;
+}
+
+.languages ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(70px,auto));
+    gap: 30px;
+    column-gap: 40px;
+    justify-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+    list-style:square;
+    color: rgb(85,76,225);
+    font-size: 2vh;
+}
+
+.tools ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(70px,auto));
+    gap: 30px;
+    column-gap: 40px;
+    justify-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+    list-style:square;
+    color: rgb(85,76,225);
+    font-size: 2vh;
+}
+
+.soft_skill ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(70px,auto));
+    gap: 30px;
+    column-gap: 30px;
+    justify-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+    list-style:square;
+    color: rgb(85,76,225);
+    font-size: 2vh;
+}
+
+.skills div:hover{
+    height: 230px;
+    width: 380px;
+    .front_p{
+        font-size: 30px;
+    }
+    .front_ul{
+        font-size: 2.2vh;
+    }
+    .back_p{
+        font-size: 30px;
+    }
+    .back_ul{
+        font-size: 2.2vh;
+    }
+    .database_p{
+        font-size: 30px;
+    }
+    .database_ul{
+        font-size: 2.2vh;
+    }
+    .language_p{
+        font-size: 30px;
+    }
+    .language_ul{
+        font-size: 2.2vh;
+    }
+    .tools_p{
+        font-size: 30px;
+    }
+    .tools_ul{
+        font-size: 2.2vh;
+    }
+    .soft_p{
+        font-size: 30px;
+    }
+    .soft_ul{
+        font-size: 2.2vh;
+    }
 }
 
 /* CSS for about me section */
@@ -242,10 +434,14 @@ html{
     scroll-margin-top: 80px;
     
 }
-#about p{
-    font-size: 3vh;
+
+
+.about_me{
+    font-size: 4vh;
     position: relative;
     top: 1vh;
+    text-shadow: 5px 5px 10px blue;
+    
 }
 #about img{
     position: relative;
@@ -265,9 +461,16 @@ html{
     grid-template-rows: repeat(2,minmax(100px,auto));
 }
 
-.details div{
+.details p{
+    font-size: 25px;
+    position: relative;
+    top: 1vh;
+    text-shadow: 5px 5px 20px black;
+}
+
+.personal_det{
     height: 200px;
-    width: 500px;
+    width: 590px;
     border: 2px dashed black;
     box-shadow: 0 0 20px gray;
     border-radius: 1vh;
@@ -284,42 +487,115 @@ html{
     padding: 10px;
     margin-top: 20px;
     list-style:square;
-    color: rgb(0, 80, 253);
+    color: rgb(85,76,225);
+    font-size: 2vh;
+}
+
+.personal_det:hover{
+    height: 210px;
+    width: 610px;
+    .personal_p{
+        font-size: 30px;
+    }
+    .personal_ul{
+        font-size: 2.2vh;
+    }
 }
 
 .hobbies{
     grid-column: 1/3;
+    height: 200px;
+    width: 590px;
+    border: 2px dashed black;
+    box-shadow: 0 0 20px gray;
+    border-radius: 1vh;
+    justify-items:center;
+    align-items: center;
 }
 
 .hobbies ul{
     display: grid;
     grid-template-columns: repeat(2,minmax(70px,auto));
     gap: 10px;
-    column-gap: 30px;
+    column-gap: 55px;
     justify-items: flex-start;
     padding: 10px;
     margin-top: 20px;
     list-style:square;
-    color: rgb(0, 80, 253);
+    color: rgb(85,76,225);
+    font-size: 2vh;
+}
+
+.hobbies:hover{
+    height: 210px;
+    width: 620px;
+    .hobbies_p{
+        font-size: 30px;
+    }
+    .hobbies_ul{
+        font-size: 2.2vh;
+    }
 }
 
 .introduction {
     grid-column: 1/3;
+    height: 250px;
+    width: 750px;
+    border: 2px dashed black;
+    box-shadow: 0 0 20px gray;
+    border-radius: 1vh;
+    justify-items:center;
+    align-items: center;
     
 }
 
 .introduction ul{
-    color: rgb(0, 80, 253);
+    color: rgb(85,76,225);
     position: relative;
-    top: 2vh;
+    top: 4vh;
     left: 1vh;
+    right: 2vh;
+    font-size: 2vh;
+}
+
+.introduction:hover{
+    height: 280px;
+    width: 800px;
+    .intro_p{
+        font-size: 30px;
+    }
+    .intro_ul{
+        font-size: 2.2vh;
+    }
+}
+
+.career_obj{
+    height: 200px;
+    width: 590px;
+    border: 2px dashed black;
+    box-shadow: 0 0 20px gray;
+    border-radius: 1vh;
+    justify-items:center;
+    align-items: center;
 }
 
 .career_obj ul{
-    color: rgb(0, 80, 253);
+    color: rgb(85,76,225);
     position: relative;
     top: 2vh;   
     left: 1vh;
+    font-size: 2vh;
+}
+
+.career_obj:hover{
+    height: 210px;
+    width: 610px;
+    .career_head{
+        font-size: 30px;
+    }
+    .career_ul{
+        font-size: 2.2vh;
+    }
 }
 
 /* CSS for education section */
@@ -330,6 +606,10 @@ html{
     justify-items: center;
     font-size: 4vh;
     top: 40vh;
+}
+
+.edu{
+    text-shadow: 5px 5px 10px blue;
 }
 
 
@@ -344,14 +624,32 @@ html{
     grid-template-rows: repeat(2,minmax(100px,auto));
 }
 .edu_details div:hover{
-    height: 300px;
-    width: 550px;
+    height: 270px;
+    width: 520px;
+    .ten_p{
+        font-size: 30px;
+    }
+    .ten_ul{
+        font-size: 2.2vh;
+    }
+    .twelve_p{
+        font-size: 30px;
+    }
+    .twelve_ul{
+        font-size: 2.2vh;
+    }
+    .college_p{
+        font-size: 30px;
+    }
+    .college_ul{
+        font-size: 2.2vh;
+    }
+    
 }
 
 .edu_details div{
     height: 250px;
     width: 500px;
-    /* border: 2px solid black; */
     box-shadow: 0 0 20px gray;
     border-radius: 1vh;
     justify-items:center;
@@ -367,7 +665,7 @@ html{
     padding: 10px;
     margin: 10px;
     list-style:square;
-    color: rgb(0, 80, 253);
+    color: rgb(85,76,225);
     font-size: 2vh;
     position: relative;
     left: 1vh;
@@ -375,6 +673,8 @@ html{
 .edu_details p{
     font-size: 25px;
     padding: 20px;
+    text-shadow: 5px 5px 20px black;
+    
 }
 
 .college{
@@ -386,10 +686,13 @@ html{
 #project{
     scroll-margin-top: 80px;
     position: relative;
-    /* display: flex; */
     justify-items: center;
     font-size: 4vh;
     top: 50vh;
+}
+
+.proj{
+    text-shadow: 5px 5px 10px blue;
 }
 
 
@@ -416,7 +719,7 @@ html{
     padding: 10px;
     margin: 10px;
     list-style:decimal;
-    color: rgb(0, 80, 253);
+    color: rgb(85,76,225);
     font-size: 2vh;
     position: relative;
     left: 2vh;
@@ -424,58 +727,152 @@ html{
 .proj_head{
     font-size: 25px;
     padding: 20px;
+    text-shadow: 5px 5px 20px black;
 }
 
 .rem_3G{
     height: 250px;
     width: 500px;
-    /* border: 2px solid black; */
     box-shadow: 0 0 20px gray;
     border-radius: 1vh;
     justify-items:center;
     align-items: center;
+}
+.rem_3G:hover{
+    height: 270px;
+    width: 520px;
+    .proj_head{
+        font-size: 30px;
+    }
+    .library_ul{
+        font-size: 2.2vh;
+    }
+    .library_p{
+        font-size: 2.2vh;
+    }
 }
 
 .rem_3F{
     height: 250px;
     width: 500px;
-    /* border: 2px solid black; */
     box-shadow: 0 0 20px gray;
     border-radius: 1vh;
     justify-items:center;
     align-items: center;
 }
+.rem_3F:hover{
+    height: 270px;
+    width: 520px;
+    .proj_head{
+        font-size: 30px;
+    }
+    .portfolio_ul{
+        font-size: 2.2vh;
+    }
+     .portfolio_p{
+        font-size: 2.2vh;
+    }
+    
+}
 
 .rem_3B{
     height: 250px;
     width: 500px;
-    /* border: 2px solid black; */
     box-shadow: 0 0 20px gray;
     border-radius: 1vh;
     justify-items:center;
     align-items: center;
     grid-column: 1/3;
+}
+.rem_3B:hover{
+    height: 270px;
+    width: 520px;
+    .proj_head{
+        font-size: 30px;
+    }
+    .back_ul{
+        font-size: 2.2vh;
+    }
 }
 
 
 
 .console{
     grid-column: 1/3;
-     height: 300px;
+     height: 340px;
     width: 1000px;
-    /* border: 2px solid black; */
     box-shadow: 0 0 20px gray;
     border-radius: 1vh;
     justify-items:center;
     align-items: center;
 }
-
-
+.console:hover{
+    height: 360px;
+    width: 1020px;
+    .proj_head{
+        font-size: 30px;
+    }
+    .snake_p{
+        font-size: 2.2vh;
+    }
+    .snake_ul{
+        font-size: 2.2vh;
+    }
+    .bank_p{
+        font-size: 2.2vh;
+    }
+    .bank_ul{
+        font-size: 2.2vh;
+    }
+    .book_p{
+        font-size: 2.2vh;
+    }
+    .book_ul{
+        font-size: 2.2vh;
+    }
+}
 
 
 
 
 /* CSS for progress bar */
+
+@keyframes HTML{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+
+@keyframes CSS{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 50%;
+    }
+}
+
+@keyframes JS{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 40%;
+    }
+}
+
+@keyframes JAVA{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+
 
 .Bar{
     display: grid;
@@ -519,31 +916,32 @@ html{
 .inner_css{
     width: 50%;
     height: 100%;
-    /* border: 0px solid red; */
     background-color: rgb(85, 76, 255);
     border-radius: 20px;
+    animation: CSS 5s infinite;
 }
 
 .inner_html{
     width: 70%;
     height: 100%;
-    /* border: 0px solid red; */
     background-color: rgb(85, 76, 255);
     border-radius: 20px;
+    animation: HTML 5s infinite;
+
 }
 .inner_js{
     width: 40%;
     height: 100%;
-    /* border: 0px solid red; */
     background-color: rgb(85, 76, 255);
     border-radius: 20px;
+    animation: JS 5s infinite;
 }
 .inner_java{
     width: 60%;
     height: 100%;
-    /* border: 0px solid red; */
     background-color: rgb(85, 76, 255);
     border-radius: 20px;
+    animation: JAVA 5s infinite;
 }
 .skill_info span{
     color: black;
@@ -555,13 +953,60 @@ html{
 #footer_home{
     position: relative;
     top: 50vh;
-    height: 20vh;
+    height: 50vh;
     background-color: gray;
-    /* position: sticky; */
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0px,500px));
+    grid-template-rows: repeat(2,minmax(0px,auto));
 }
-#footer_home p{
-    position: relative;
-    left: 1vh;
-    font-weight:500;
+#footer_home a{
+   color: black;
+}
+#footer_home a:hover{
+   color: blue;
+   text-decoration:underline;
 
+}
+.intro{
+    grid-row: 1/2;
+    
+    align-self: center;
+    margin-left: 2vh;
+}
+
+.quick_links{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 4vh;
+}
+.quick_links a{
+    margin: 5px;
+    text-decoration: none;
+
+}
+
+.follow{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.follow a{
+    margin: 5px;
+    text-decoration: none;
+    margin-right:30px ;
+}
+
+.contact_footer{
+grid-row: 2/3;
+margin-left: 2vh;
+}
+.heart{
+    color: red;
 }
