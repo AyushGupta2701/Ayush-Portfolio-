@@ -54,7 +54,7 @@ html{
                 top: 0vh;
                 z-index: 1;
                 gap: 0px;
-            
+                flex-wrap: wrap;
         }
 .logo{
                 position: relative;
@@ -1016,6 +1016,181 @@ margin-left: 2vh;
     color: red;
 }
 
+/* css for contact section */
+.contact_panel{
+    display: none;
+}
+.contact_panel.active_panel
+{
+    display: block;
+}
+
+.contact-card.active{
+     border: 5px solid white;
+}
+.Contact_me{
+    position: relative; 
+    top: 2vh;
+    /* justify-self: center; */
+    justify-items: center;
+    padding: 5vh;
+    /* line-height:10vh; */
+    font-weight: bold;
+    font-size: 3vh;
+    width: 100%;
+    color: #f2f1f5;
+    background-color: #754ee0;
+    border-radius: 20px;
+}
+.contact_heading{
+    justify-items: center;
+    padding: 4vh;
+}
+
+.Contact_options{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    padding: 3vh;
+    /* flex-wrap: wrap; */
+}
+.contact-card{
+        border: none;
+        outline: none;
+        height: 7vh;
+        width: 25vw;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.9vh;
+        color: white;
+        border-radius: 10px;
+      
+
+}
+#email_button{
+    background-color: rgb(43, 146, 214);
+    box-shadow: 5px 5px 1px rgb(106, 183, 235) ;
+}
+
+#message_button{
+    background-color: rgb(180, 72, 252);
+     box-shadow: 5px 5px 1px rgb(130, 64, 173);
+}
+#Github_button{
+    background-color: rgb(6, 212, 51);
+     box-shadow: 5px 5px 1px rgb(11, 136, 38);
+}
+#Linkedin_button{
+    background-color: rgb(70, 70, 240);
+     box-shadow: 5px 5px 1px rgb(97, 97, 196) ;
+     
+}
+
+/* css for different panels in contact section */
+.All_panels{
+    justify-self: center;
+    align-self: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+#message,#linkedin,#github,#emails{
+    padding:5vh 5vh 10vh 5vh ;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0px 0px 40px black;
+    border-radius: 30px;
+}
+.panel_heading{
+    padding-bottom:3vh;
+    justify-self: center;
+    font-size: 4vh;
+}
+
+/* css for panel form */
+@keyframes input_line{
+    from{
+        width: 0%;
+        border-bottom-color: aqua;
+    }
+    to{
+        width: 100%;
+        border-bottom-color: aqua;
+    }
+}
+.input{
+    border: none;
+    border-bottom: 2px solid #5a25eb;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    color: black;
+    font-size: 1.9vh;
+    
+}
+.input:focus{
+    animation: input_line 1s forwards ;
+}
+
+#textarea{
+    height: 5vh;
+}
+#message label{
+    font-size: 2vh;
+}
+
+.message_icon{
+    justify-self: center;
+    font-size: 8vh;
+    padding-bottom: 2vh;
+}
+
+.submit{
+    width: 100%;
+    background-color: #754ee0;
+    padding: 1vh;
+    border-radius: 20px;
+    color:white;
+    font-size: 2vh;
+}
+
+/* css for panel email */
+
+.email_icon{
+    font-size: 10vh;
+    padding-top: 4vh;
+    display: flex;
+    justify-self:center;
+    color: rgb(50, 160, 233);
+    
+
+}
+
+/* css for panel linkedin */
+#linkedin{
+    justify-items: center;
+}
+.linkedin_icon{
+    display: flex;
+    font-size: 15vh;
+    color: blue;
+    padding-top: 4vh;
+    justify-self: center;
+}
+/* css for github panel */
+#github{
+    justify-items: center;
+    justify-self: center;
+    /* background: linear-gradient(to right,rgb(70, 179, 70),green); */
+}
+.git_icon{
+    display: flex;
+    font-size: 15vh;
+    color: rgb(59,245,22);
+    justify-self: center;
+    padding-top: 4vh;
+}
+
+
+
  @media(max-width:455px){
     #footer_home{
         display: flex;
@@ -1067,3 +1242,4 @@ margin-left: 2vh;
     }
 
 }
+

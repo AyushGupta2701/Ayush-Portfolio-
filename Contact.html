@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+      <!-- div for navigation bar -->
+     <div class="Navbar">
+            <div class="logo">
+                  <img src="Ayush_Logo.jpeg"alt="Ayush_Logo">
+            </div>
+            <div class="services">
+                <ul>
+                   <li> <a href="index.html" class="active">Home</a></li> 
+                   <li> <a href="index.html" >Skills</a></li> 
+                    <li> <a href="index.html">About</a></li>
+                    <li> <a href="index.html">Education</a></li>
+                    <li>  <a href="index.html">Project</a></li>   
+                </ul>    
+            </div>
+            <div class="contact">
+                    <a href="Contact.html">contact</a>
+            </div>
+        </div>  
+
+    <!-- Div for contact heading -->
+    <div class="Contact_me">
+        <h1>Contact Me</h1>
+        
+    </div>
+
+    <div class="contact_heading">
+         <h1>How would you like to contact to me?</h1><br>
+        <h3 style="color: gray; font-weight: bold;">Choose your preffered way to connect with me.</h3>
+    </div>
+
+    <!-- Contact options -->
+     <div class="Contact_options">
+        <button id="message_button" class="contact-card active" onclick="showPanel('message',this.id)">
+            <b>Send message</b>
+        <h6>Open contact form</h6>
+        </button>
+        <button id="email_button" class="contact-card" onclick="showPanel('emails',this.id)">
+            <b>Email</b> 
+            <h6>Connect through email</h6>
+        </button>
+        <button id="Linkedin_button" class="contact-card" onclick="showPanel('linkedin',this.id)">
+            <b>Linkedin</b>
+            <h6>Visit my profil</h6>
+        </button>
+        <button id="Github_button" class="contact-card" onclick="showPanel('github',this.id)">
+            <b>Github</b>
+            <h6>View my code</h6>
+        </button>
+     </div>
+
+     <!-- Contact Panels -->
+      <div class="All_panels"> 
+        <!-- Panel for from -->
+        <div id="message" class="contact_panel active_panel">
+            
+            <form>
+                <h3 class="panel_heading">Send Me a Message</h3>
+                <!-- <i class="fa-regular fa-message-lines"></i> -->
+                <p class="message_icon" >💬</p>
+
+                <label for="name">Your Name*</label><br><br>
+                <input class="input" type="text" required id="name"><br><br><br>
+                <label for="email">Your Email*</label><br><br>
+                <input class="input" type="email" required id="email"><br><br><br>
+                <label for="textarea">Your Message</label><br>
+                <textarea class="input" id="textarea" maxlength="200"></textarea><br><br><br>
+                <input class="submit" type="submit">
+            </form>
+        </div>
+
+        <!-- Panel for send email -->
+         <div id="emails" class="contact_panel">
+            <h3 class="panel_heading">Email me</h3>
+            <h2 style="color: gray;">You can directly send me a email.</h2>
+            <a href="mailto: guptaayush27012005@gmail.com" class="email_icon">
+                <i class="fa-regular fa-envelope"></i>
+                
+            </a>
+         </div>
+
+         <!-- Panel for linkdin -->
+          <div id="linkedin" class="contact_panel">
+            <h3 class="panel_heading">Connect on Linkedin</h3>
+            <h2 style=" color: gray;"><b>Visit my profile</b></h2>
+            <!-- <h1><i class="fa-brands fa-linkedin linkedin_icon "></i> </h1> -->
+
+            <a href="linkdin.com" target="_blank" class="linkedin_icon"><i class="fa-brands fa-linkedin  "></i></a>
+          </div>
+
+          <!-- Panel for github -->
+          <div id="github" class="contact_panel">
+            <h3 class="panel_heading">Explore my Github</h3>
+            <h2 style="color: gray;">Visit my code</h2>
+            <a href="https://github.com/AyushGupta2701" target="_blank" class="git_icon" >
+                <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+      </div>
+
+      <!-- div for footer -->
+                <div id="footer_home" style="top: 10vh;"><br>
+                    <div class="intro">
+                        <p>AYUSH GUPTA</p><br>
+                        <p>Java Full Stack Developer</p><br>
+                        <p>"I enjoy building clean, responsive, and user-friendly web applications while continuously learning new technologies."</p>
+                    </div>
+                    <div class="quick_links">
+                        <a href="index.html">Home</a>
+                        <a href="#about">About Me</a>
+                        <a href="#skill">Skills</a>
+                        <a href="#education">Education</a>
+                        <a href="#project">Project</a>
+                        <a href="#Resume">Resume</a>
+                    </div>
+
+                    <div class="follow">
+                        <a href="https://www.linkedin.com/in/ayush-gupta-0410743bb/" target="_blank">linkdin</a>
+                        <a href="https://github.com/AyushGupta2701" target="_blank">Github</a>
+                    </div>
+
+                    <div class="contact_footer">
+                        <p>Email- ayushguptaXXXX@gmail.com</p>
+                        <br>
+                        <p>Phone- 83183XXXXX</p>
+                        <br>
+                        <p>Address- Varanasi, Uttar Pradesh</p>
+                    </div>
+
+                    <div class="Made_by">
+                        <p>&copy; 2026 Ayush Gupta. All Rights Reserved.</p><br>
+                        <p>Made with <i class="heart fa-duotone fa-solid fa-heart" style="--fa-secondary-color: rgb(243, 11, 11); --fa-secondary-opacity: 1;"></i> using HTML, CSS & JavaScript. </p>
+                    </div>
+                </div>
+      <script src="script.js" defer></script>
+</body>
+</html>
