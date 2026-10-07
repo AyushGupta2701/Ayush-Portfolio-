@@ -889,6 +889,7 @@ html{
     align-content: center;
     justify-items: center;
     align-items: center;
+    text-align: center;
 
 }
 
@@ -958,11 +959,12 @@ html{
     font-family:'Times New Roman', Times, serif;
     position: relative;
     top: 50vh;
-    height: 50vh;
+    /* height: 50vh; */
     background-color: gray;
     display: grid;
     grid-template-columns: repeat(2,minmax(0px,500px));
     grid-template-rows: repeat(2,minmax(0px,auto));
+
 }
 #footer_home a{
    color: black;
@@ -970,6 +972,9 @@ html{
 #footer_home a:hover{
    color: blue;
    text-decoration:underline;
+   transform: translateX(.5vw);
+   transform: scale(5px);
+
 
 }
 .intro{
@@ -1045,6 +1050,7 @@ margin-left: 2vh;
 .contact_heading{
     justify-items: center;
     padding: 4vh;
+    text-align: center;
 }
 
 .Contact_options{
@@ -1130,9 +1136,21 @@ margin-left: 2vh;
     animation: input_line 1s forwards ;
 }
 
-#textarea{
-    height: 5vh;
+
+#textarea:focus{
+    animation: input_line 1s forwards;
 }
+
+#textarea_maxLength{
+   position: absolute;
+    right: 8px;
+    bottom: 8px; 
+    pointer-events:none;
+    color: rgb(105,95,95);
+    font-size: 1.5vh;
+
+}
+
 #message label{
     font-size: 2vh;
 }
@@ -1196,6 +1214,7 @@ margin-left: 2vh;
         display: flex;
         flex-direction: column;
         height: 70vh;
+        text-align: center;
     }
 
     .Navbar{
@@ -1242,4 +1261,5 @@ margin-left: 2vh;
     }
 
 }
+
 

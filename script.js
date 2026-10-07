@@ -52,19 +52,7 @@ function typeEffect(){
 
 typeEffect();
 
-// Js for panels in contact section
-function showPanel(type,card)
-{
-    const panels=document.querySelectorAll(".contact_panel");
-    const cards=document.querySelectorAll(".contact-card");
-    panels.forEach(function(one_by_one_panel){
-        one_by_one_panel.classList.remove("active_panel")
 
-    });
-    cards.forEach(function(card_by_card){
-        card_by_card.classList.remove("active");
-    });
-    document.getElementById(type).classList.add("active_panel");
-    document.getElementById(card).classList.add("active");
 
-}
+
+

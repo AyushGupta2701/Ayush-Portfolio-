@@ -61,21 +61,29 @@
 
      <!-- Contact Panels -->
       <div class="All_panels"> 
+
         <!-- Panel for from -->
         <div id="message" class="contact_panel active_panel">
             
-            <form>
+            <form id="contact_form">
                 <h3 class="panel_heading">Send Me a Message</h3>
-                <!-- <i class="fa-regular fa-message-lines"></i> -->
+
                 <p class="message_icon" >💬</p>
 
                 <label for="name">Your Name*</label><br><br>
-                <input class="input" type="text" required id="name"><br><br><br>
+                <input class="input" type="text" id="name" maxlength="50" pattern="^[A-Za-z ]+$"  required ><br><br><br>
                 <label for="email">Your Email*</label><br><br>
-                <input class="input" type="email" required id="email"><br><br><br>
-                <label for="textarea">Your Message</label><br>
-                <textarea class="input" id="textarea" maxlength="200"></textarea><br><br><br>
-                <input class="submit" type="submit">
+                <input class="input" type="email"  id="email" maxlength="50" pattern="^[A-Za-z0-9._%+-#$&*]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" required><br><br><br>
+
+
+                 <div style="position:relative">
+            <label for="textarea">Your Message</label><br>
+            <textarea id="textarea" class="input" maxlength="500" style="resize: none;" ></textarea>
+            <span id="textarea_maxLength"><span id="count">0</span>/500</span>
+        </div><br>
+
+
+                 <button type="submit" class="submit">Send</button>
             </form>
         </div>
 
@@ -95,7 +103,7 @@
             <h2 style=" color: gray;"><b>Visit my profile</b></h2>
             <!-- <h1><i class="fa-brands fa-linkedin linkedin_icon "></i> </h1> -->
 
-            <a href="linkdin.com" target="_blank" class="linkedin_icon"><i class="fa-brands fa-linkedin  "></i></a>
+            <a href="https://www.linkedin.com/in/ayush-gupta-0410743bb/" target="_blank" class="linkedin_icon"><i class="fa-brands fa-linkedin  "></i></a>
           </div>
 
           <!-- Panel for github -->
@@ -130,18 +138,19 @@
                     </div>
 
                     <div class="contact_footer">
-                        <p>Email- ayushguptaXXXX@gmail.com</p>
+                        <p> 💬 Email- ayushguptaXXXX@gmail.com</p>
                         <br>
-                        <p>Phone- 83183XXXXX</p>
-                        <br>
-                        <p>Address- Varanasi, Uttar Pradesh</p>
+                        <p> 📞 Phone- 83183XXXXX</p>
+                        
+                        <p style="background-color: gray;"> 📍 Address- Varanasi, Uttar Pradesh</p>
                     </div>
 
-                    <div class="Made_by">
+                    <div class="Made_by" style="background-color: gray;">
                         <p>&copy; 2026 Ayush Gupta. All Rights Reserved.</p><br>
                         <p>Made with <i class="heart fa-duotone fa-solid fa-heart" style="--fa-secondary-color: rgb(243, 11, 11); --fa-secondary-opacity: 1;"></i> using HTML, CSS & JavaScript. </p>
                     </div>
                 </div>
-      <script src="script.js" defer></script>
+      <script src="Contact.js" defer></script>
+      
 </body>
 </html>
